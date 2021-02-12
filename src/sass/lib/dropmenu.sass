@@ -1,0 +1,52 @@
+.dropmenu
+    display: flex
+    position: relative
+    width: 40px
+    height: 15px
+    cursor: pointer
+    &:hover 
+        > ul
+            visibility: visible
+            opacity: 1
+            
+    &__submenu
+        display: flex
+        position: absolute
+        flex-direction: column
+        top: 100%
+        left: 0
+        color: black
+        z-index: 5
+        visibility: hidden
+        opacity: 0
+        @media screen and ( max-width: 435px ) 
+            flex-direction: row
+            font-size: 0.5rem
+
+    
+    &__item
+        display: flex
+        width: 150px
+        position: relative
+        border-right: 2px solid $hover-color
+        cursor: pointer
+        padding: 15px 15px
+        background: $title-color
+        @media screen and ( max-width: 435px )
+            font-size: 0.5rem
+            padding: 5px 2px
+            width: 50px
+        &:hover 
+            > ul
+                top: 0
+                left: calc( 100% + 2px )
+                visibility: visible
+                opacity: 1
+            @media screen and ( max-width: 435px ) 
+                > ul
+                    top: 100%
+                    left: 0
+                    visibility: visible
+                    opacity: 1
+
+        

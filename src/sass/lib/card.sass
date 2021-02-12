@@ -1,0 +1,53 @@
+.card
+    display: flex
+    flex-direction: column
+    background: #fff
+
+    &__img
+        img
+            width: 100%
+            object-fit: cover
+
+    &__content
+        display: flex
+        flex-direction: column
+        padding: 7px
+        background: $fon-color
+        >:not(:last-child)
+            margin-bottom: 10px
+            
+            
+
+    &__title
+        color: $title-color
+        font-size: 0.9rem
+
+    &__info
+        font-size: 0.7rem
+
+    &__buy
+        font-size: 0.8rem
+        display: flex
+        align-items: center
+        justify-content: center
+        >:not(:last-child)
+            margin-right: 5px
+
+    &__price
+        white-space: nowrap
+
+    &__btn
+        background: $fon-color
+        color: $btn-color
+        border: 1px solid $btn-color
+        border-radius: 5px
+        padding: 5px 10px
+        cursor: pointer
+        &:hover
+            background: $btn-color
+            color: $fon-color
+            border: 1px solid $fon-color
+            
+
+
+

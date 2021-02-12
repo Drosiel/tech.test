@@ -1,0 +1,39 @@
+.popup
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+    width: 700px
+    height: 700px
+    background: $main-color
+    border-radius: 5px
+    border: 2px solid $add-color
+    @media screen and ( max-width: 435px )
+        width: 100%
+        font-size: 0.6rem
+        position: absolute
+        top: 0
+        transform: translate(-50%)
+        
+
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+        position: relative
+
+    &__top
+        display: flex
+        background: $add-color
+        height: 25px
+        align-items: center
+        padding: 0 5px
+
+    &__bottom
+
+    &__item
+        &:last-child
+            margin-left: auto 
+
+    &__top
+

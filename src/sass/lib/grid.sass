@@ -1,0 +1,29 @@
+.grid
+    &__deck
+        display: flex
+        flex-wrap: wrap
+        
+    &__item
+        padding: 5px
+        flex: 0 0 33.33%
+        cursor: pointer
+        @media screen and ( max-width: 435px )
+            flex: 1 1 100%
+
+.toggle
+    @media screen and ( min-width: 435px )
+        .grid__deck
+            flex-direction: column
+        .card
+            flex-direction: row
+            &__img
+                display: flex
+                align-items: center
+                width: 90px
+            &__content
+                flex-direction: row
+                >:not(:last-child)
+                    margin: 0
+                    margin-right: 10px
+            &__buy
+                margin: 0

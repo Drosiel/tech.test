@@ -1,0 +1,30 @@
+.changename
+    display: none
+    &__overlay
+        position: absolute
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100vh
+        background: #00000085
+
+    &__form
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        
+        position: absolute
+        display: flex
+        flex-direction: column
+        width: 200px    
+        height: 100px
+        padding: 5px 15px
+        border: 2px solid $hover-color
+        background: $title-color
+        >:not(:last-child)
+            margin-bottom: 5px
+        input, button
+            padding: 5px
+    
+.activ
+    display: flex
